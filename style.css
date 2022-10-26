@@ -14,7 +14,7 @@ button {
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: underline;
     cursor: pointer;
 }
 
@@ -100,7 +100,7 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, .9);
 }
 
 .d-bloc button:hover {
@@ -133,7 +133,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: #000000;
+    color: #FFFFFF;
 }
 
 .d-bloc .a-btn:hover,
@@ -150,7 +150,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: black;
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -166,6 +166,7 @@ a:hover {
 .d-bloc .panel {
     color: rgba(0, 0, 0, .5);
 }
+
 
 .d-bloc .panel button:hover {
     color: rgba(0, 0, 0, .7);
@@ -335,6 +336,7 @@ a:hover {
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
+    text-decoration: underline;
 }
 
 .navbar-toggle {
@@ -648,10 +650,18 @@ h6,
 p,
 label,
 .btn,
-a {
+a,
+.quote {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #3a3a3a!important;
+}
+
+.quote {
+    font-style: italic;
+    font-size: large;
+    display: block;
+    margin-bottom: 2%;
 }
 
 .container {
@@ -800,6 +810,12 @@ h4 {
     text-align: center;
 }
 
+.div-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .ltc-white:hover {
     color: #cccccc!important;
 }
@@ -826,11 +842,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/agence-la-panthere.min.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.min.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -879,6 +895,7 @@ h4 {
     #hero-bloc {
         overflow-x: hidden;
         position: relative;
+        max-width: 1440px;
     }
     .bloc {
         padding-left: constant(safe-area-inset-left);
@@ -954,7 +971,7 @@ h4 {
         background: rgba(0, 0, 0, .8);
     }
     #hero-bloc .navbar .nav a {
-        color: rgba(255, 255, 255, .6);
+        color: rgba(255, 255, 255, .9);
     }
     .hero {
         padding: 50px 0;
@@ -981,6 +998,10 @@ h4 {
         float: left;
         margin-left: 10px;
     }
+    .div-margin {
+        margin-left: 20px;
+    }
+    
     .bloc {
         padding-left: 0;
         padding-right: 0;
